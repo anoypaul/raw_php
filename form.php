@@ -3,7 +3,7 @@
 
   if (isset($_POST['button'])) {
     $name = $_POST['name'];
-    $mail = $_POST['email'];
+    $email = $_POST['email'];
     if(!empty($name) && !empty($email)){
         echo "Your Data submited";
     }else{
@@ -27,8 +27,12 @@
 </head>
 <body>
 
-    <h4>Name = <?php echo $name ?> </h4>
-    <h4>Password = <?php echo $name ?> </h4>
+    <h4>Name = <?php if(isset($name)){
+        echo $name;
+    } ?> </h4>
+    <h4>email = <?php if(isset($email)){
+        echo  $email;
+    } ?> </h4>
  
     <!-- form design -->
     <div class="col-4">
