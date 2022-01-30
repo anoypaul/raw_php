@@ -33,11 +33,11 @@
                         </div>
                         <div class="col-8">
                             <div class="card-body">
-                                <h6>Name : </h6>
-                                <h6>Phone : </h6>
-                                <h6>Email : </h6>
-                                <h6>Course : </h6>
-                                <h6>Batch No : </h6>
+                                <h6>Name : <?php if(isset($name)){ echo $name;} ?> </h6>
+                                <h6>Phone : <?php if(isset($phone)){ echo $phone;} ?> </h6>
+                                <h6>Email : <?php if(isset($email)){ echo $email;} ?> </h6>
+                                <h6>Course : <?php if(isset($course)){ echo $course;} ?> </h6>
+                                <h6>Batch No : <?php if(isset($batch_no)){ echo $batch_no;} ?> </h6>
                             </div>
                         </div>
                     </div>
